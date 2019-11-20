@@ -29,7 +29,7 @@ main {
 	width: 50%;
 }
 
-main ul ol {
+main ul li {
 	color: white;
 	padding: 15px;
 	background-color: #8B7F9D;
@@ -38,33 +38,33 @@ main ul ol {
 	letter-spacing: 0.5px;
 }
 
-main ul ol:nth-child(2n) {
+main ul li:nth-child(2n) {
 	background-color: #7B6E8F;
 }
 
-main ul ol:hover {
+main ul li:hover {
 	background-color: #5E546E;
 	margin-top: 3px;
 	margin-bottom: 3px;
 }
 
-main ul ol:active {
+main ul li:active {
 	background-color: #AD092C;
 }
 
-main ul ol input:checked + label {
+main ul li input:checked + label {
 	text-decoration: line-through;
 }
 
-main ul ol span {
+main ul li span {
 	font-size: 15px;
 }
 
-main ul ol span:before {
+main ul li span:before {
 	content: '(';
 }
 
-main ul ol span:after {
+main ul li span:after {
 	content: ')';
 }
 
