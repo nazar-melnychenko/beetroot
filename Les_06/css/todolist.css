@@ -1,10 +1,8 @@
-* {
-	box-sizing: border-box;
-}
 .wrapper {
 	width: 100vw;
 	height: 100vh;
 	background-color: #3B3E45;
+	font-family: "Trebuchet MS";
 }
 
 header {
@@ -38,14 +36,19 @@ main ul li {
 	letter-spacing: 0.5px;
 }
 
-main ul li:nth-child(2n) {
+main ul li:nth-child(even) {
 	background-color: #7B6E8F;
+}
+
+main ul li input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 10px;
 }
 
 main ul li:hover {
 	background-color: #5E546E;
-	margin-top: 3px;
-	margin-bottom: 3px;
+	border-top: 3.5px white solid;
+	border-bottom: 3.5px white solid;
 }
 
 main ul li:active {
@@ -54,10 +57,12 @@ main ul li:active {
 
 main ul li input:checked + label {
 	text-decoration: line-through;
+	color: #a3a0B4;
 }
 
 main ul li span {
 	font-size: 15px;
+	color: #a3a0B4;
 }
 
 main ul li span:before {
