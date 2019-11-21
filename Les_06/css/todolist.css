@@ -34,6 +34,7 @@ main ul li {
 	transition: all .2s ease-in;
 	font-size: 20px;
 	letter-spacing: 0.5px;
+	cursor: pointer;
 }
 
 main ul li:nth-child(even) {
