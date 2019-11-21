@@ -37,6 +37,10 @@ main ul li {
 	cursor: pointer;
 }
 
+main ul li label  {
+	cursor: pointer;
+}
+
 main ul li:nth-child(even) {
 	background-color: #7B6E8F;
 }
