@@ -8,7 +8,6 @@ body {
 	border: 15px solid #217EAB;
 	background-color: #2795CB;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	letter-spacing: 0.5px;
 
 }
 
@@ -36,7 +35,9 @@ main {
 	border: 2px white solid;
 	background-color: #fff;
 
+
 }
+
 
 main ul li {
 	list-style-type: none;
@@ -47,6 +48,8 @@ main ul li {
 	padding: 20px;
 	border: 2px white solid;
 	transition: all .2s ease-in;
+	letter-spacing: 0.5px;
+
 }
 
 
