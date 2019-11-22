@@ -13,7 +13,7 @@ body {
 .wrapper {
 	margin: 0 auto;
 	width: 65%;
-	min-width: 580px;
+	min-width: 615px;
 }
 
 header h1 {
@@ -41,10 +41,11 @@ main ul li {
 	font-size: 15px;
 	text-align: center;
 	color: white;
-	padding: 20px;
+	padding: 25px;
 	border: 2px white solid;
 	transition: all .2s ease-in;
 	letter-spacing: 0.5px;
+	cursor: pointer;
 }
 
 .lisbon {
