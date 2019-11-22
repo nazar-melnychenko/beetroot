@@ -46,16 +46,14 @@ main ul li:nth-child(even) {
 }
 
 main ul li input[type="checkbox"] {
-	transform: scale(1.5);
 	margin-right: 10px;
 }
+
 
 main ul li:hover {
 	background-color: #5E546E;
 	border-top: 3.5px white solid;
 	border-bottom: 3.5px white solid;
-	transform: scale(1.2);
-	;
 }
 
 main ul li:active {
