@@ -5,3 +5,4 @@ Beetroot Home Work:)
 04. <a href="https://nazar-melnychenko.github.io/beetroot/Les_04/index.html">Знайомство з CSS</a>
 05. <a href="https://nazar-melnychenko.github.io/beetroot/Les_05/index.html">Photoshop</a>
 06. <a href="https://nazar-melnychenko.github.io/beetroot/Les_06/index.html">CSS-селекторы + Shopping list</a>
+07. <a href="https://nazar-melnychenko.github.io/beetroot/Les_04/index.html">Weather Forecast</a>
