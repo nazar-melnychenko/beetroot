@@ -125,5 +125,6 @@ main ul li:hover {
 footer h2 {
 	color: white;
 	padding: 20px 0;
-	font-size: 15px;
+	font-size: 14px;
+	letter-spacing: 0.5px;
 }
