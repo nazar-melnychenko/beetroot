@@ -128,4 +128,5 @@ footer h2 {
 	padding: 20px 0;
 	font-size: 14px;
 	letter-spacing: 0.5px;
+	align-self: flex-end;
 }
