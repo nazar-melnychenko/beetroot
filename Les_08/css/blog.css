@@ -1,0 +1,106 @@
+body {
+	background-color: #e2e7ec;
+}
+
+main {
+	max-width: 1160px;
+	min-width: 320px;
+	margin: 91px auto 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-left: 20px;
+	font-family: "Hans Kendrick - Heavy";
+
+}
+
+.big {
+	display: flex;
+	margin: 20px 20px 0 0;
+	background-image: url(../img/img_big.png);
+	width: 740px;
+	height: 540px;
+	flex-direction: column;
+	justify-content: flex-end;
+ }
+
+.big > .date{
+	color: #fff;
+	opacity: 0.9;
+	padding-left: 47px;
+}
+
+.big > .description {
+	color: #fff;
+	font-size: 30px;
+	padding: 20px 0 30px 47px;
+}
+
+
+.block {
+	background-color: #fff;
+	margin: 20px 20px 0 0;
+}
+
+.date {
+	color: #818181;
+	font-family: "Hans Kendrick";
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 20px 0 15px 20px;
+}
+
+.nodate {
+	padding-top: 62px;
+}
+
+.description {
+	color: #1d1d1d;
+	font-family: "Hans Kendrick - Heavy";
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.01px;
+	padding-left: 20px;
+}
+
+.avatar {
+	padding: 70px 0 25px 20px;
+}
+
+.loading {
+	display: flex;
+	align-items: center;
+	margin: 79px;
+}
+
+.loading img {
+	animation: spin 2s linear infinite;
+}
+.loading span {
+	padding-left: 14px;
+	color: #99a5b0;
+	font-size: 13px;
+}
+
+.hometask {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+.hometask a {
+	display: block;
+	padding: 0 10px 10px;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@font-face {
+	font-family: "Hans Kendrick - Heavy";
+	src: url("../fonts/HansKendrick-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
