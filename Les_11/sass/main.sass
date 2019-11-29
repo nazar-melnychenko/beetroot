@@ -20,7 +20,9 @@ img
 
 .wrapper
   max-width: 1200px
+  min-width: 320px
   margin: 0 auto
+  padding: 0 10px
 
 .header
   background-color: rgba(255, 255, 255, 0.7)
@@ -52,7 +54,7 @@ img
       list-style: none
 
     &-link
-      padding-left: 40px
+      padding: 5px 20px
 
       a
         text-decoration: none
@@ -127,6 +129,7 @@ img
   flex-wrap: wrap
   justify-content: space-between
   align-items: center
+  padding: 70px 0 70px
 
   &_text
     max-width: 499px
@@ -142,3 +145,21 @@ img
       font-size: 17px
       font-weight: 300
       line-height: 27px
+
+
+@media screen and (max-width: 1000px)
+  .wrapper
+    text-align: center
+
+  .nav
+    justify-content: center
+    &_links
+      &-link
+        margin: 0 auto
+
+  .mainTexts
+    margin: 0 auto
+
+  .aboutScreen
+      justify-content: center
+
