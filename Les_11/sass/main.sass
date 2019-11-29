@@ -1,0 +1,144 @@
+*
+  margin: 0
+  padding: 0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  transition: all 0.3s linear
+
+img
+  width: 100%
+
+//mainScreen
+
+.mainScreen
+  background: url("../img/bg_main_screen.png") no-repeat
+  background-attachment: fixed
+  background-size: cover
+  min-height: 870px
+  width: 100%
+  position: relative
+
+.wrapper
+  max-width: 1200px
+  margin: 0 auto
+
+.header
+  background-color: rgba(255, 255, 255, 0.7)
+  width: 100%
+  position: fixed
+
+.nav
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+  &_logo
+    color: #262626
+    font-family: Pacifico
+    font-size: 50px
+    font-weight: 400
+    padding: 20px 0
+    &-scroll
+      padding: 0
+      font-size: 30px
+
+
+  &_links
+    ul
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+
+    &-link
+      padding-left: 40px
+
+      a
+        text-decoration: none
+        color: #262626
+        font-family: Raleway
+        font-size: 16px
+        font-weight: 700
+        padding-top: 6px
+
+        &:hover
+          border-top: #ff6033 3px solid
+
+.mainTexts
+  padding-top: 360px
+  max-width: 365px
+
+  &_mainText
+    margin-bottom: 34px
+    h1
+      color: #262626
+      font-family: Raleway
+      font-size: 60px
+      font-weight: 900
+
+  &_mainDesc
+    p
+      color: #262626
+      font-family: Raleway
+      font-size: 17px
+      font-weight: 300
+      line-height: 27px
+      margin-bottom: 31px
+
+.btn
+  input
+    width: 200px
+    height: 55px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+    background-color: #ff6033
+    color: #fff
+    font-family: Raleway
+    font-size: 20px
+    font-weight: 300
+    border: none
+    cursor: pointer
+    position: relative
+
+    &:hover
+      background-color: #f7504d
+
+    &:active
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+      top: 2px
+
+.mous
+  margin: 0 auto
+  width: 24px
+  height: 40px
+  position: absolute
+  bottom: 56px
+  left: 50%
+  transform: translateX(-12px)
+
+//About Us
+
+.about
+  background-color: #00c4c4
+  background-image: radial-gradient(circle 1125px at center, rgba(0, 196, 196, 0.9) 0%, rgba(0, 183, 183, 0.9) 32%, rgba(0, 173, 173, 0.9) 68%, rgba(0, 156, 156, 0.9) 100%)
+
+.aboutScreen
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+  &_text
+    max-width: 499px
+    h2
+      color: #fff
+      font-family: Raleway
+      font-size: 90px
+      font-weight: 700
+      padding-bottom: 34px
+    p
+      color: #fff
+      font-family: Raleway
+      font-size: 17px
+      font-weight: 300
+      line-height: 27px
