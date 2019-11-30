@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+* body {
+  font-family: Raleway;
+}
 
 .wrapper {
   max-width: 1200px;
@@ -30,7 +33,6 @@
 }
 .contact_head h1 {
   color: #262626;
-  font-family: Raleway;
   font-size: 90px;
   font-weight: 700;
 }
@@ -42,7 +44,6 @@
 }
 .contact_desc p {
   color: #262626;
-  font-family: Raleway;
   font-size: 17px;
   font-weight: 300;
 }
@@ -60,7 +61,6 @@
   background-color: #00c4c4;
   opacity: 0.5;
   color: #fff;
-  font-family: Raleway;
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
@@ -73,6 +73,7 @@
   opacity: 1;
 }
 .contact_wrapper form textarea {
+  max-height: 250px;
   height: 250px;
   max-width: 500px;
 }
@@ -85,19 +86,18 @@
   font-size: 20px;
   color: #fff;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 .contact_wrapper form [type=submit]:hover {
   background-color: #009191;
 }
 .contact_wrapper-adress h2 {
   color: #262626;
-  font-family: Raleway;
   font-size: 17px;
   font-weight: 700;
   line-height: 25px;
 }
 .contact_wrapper-adress p {
-  font-family: Raleway;
   font-weight: 300;
   padding-bottom: 21px;
 }
@@ -114,18 +114,17 @@
 }
 .footer_copy {
   color: #b9b9b9;
-  font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
 .footer_logo {
   color: #b9b9b9;
+  font-family: Pacifico;
   font-size: 25px;
   padding: 0;
 }
 .footer_made {
   color: #b9b9b9;
-  font-family: Raleway, sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
