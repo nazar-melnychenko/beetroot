@@ -74,6 +74,7 @@
 }
 .contact_wrapper form textarea {
   height: 250px;
+  max-width: 500px;
 }
 .contact_wrapper form [type=submit] {
   width: 220px;
@@ -113,7 +114,7 @@
 }
 .footer_copy {
   color: #b9b9b9;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -124,7 +125,7 @@
 }
 .footer_made {
   color: #b9b9b9;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
