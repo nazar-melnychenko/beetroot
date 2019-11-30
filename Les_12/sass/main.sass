@@ -1,0 +1,123 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.wrapper
+  max-width: 1200px
+  min-width: 320px
+  margin: 0 auto
+  padding: 10px 0
+
+.contactScreen
+  background: url("../img/bg_contact.png") no-repeat
+  background-size: cover
+
+.logo
+  color: #262626
+  font-family: Pacifico
+  font-size: 50px
+  font-weight: 400
+  padding: 20px 0
+
+.contact
+  &_head
+    text-align: center
+    padding-top: 101px
+
+    h1
+      color: #262626
+      font-family: Raleway
+      font-size: 90px
+      font-weight: 700
+
+  &_desc
+    margin: 48px auto
+    max-width: 370px
+    text-align: center
+    line-height: 25px
+    p
+      color: #262626
+      font-family: Raleway
+      font-size: 17px
+      font-weight: 300
+
+  &_wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    text-align: left
+    form
+      input:not([type="submit"]),
+      textarea
+        border: none
+        width: 500px
+        height: 50px
+        background-color: #00c4c4
+        opacity: 0.5
+        color: #fff
+        font-family: Raleway
+        font-size: 15px
+        font-weight: 300
+        line-height: 25px
+        padding-left: 20px
+        margin-bottom: 15px
+        &:hover
+          border-left: #355b82 5px solid
+          opacity: 1
+
+      textarea
+        height: 250px
+
+      [type="submit"]
+        width: 220px
+        height: 50px
+        cursor: pointer
+        background-color: #00c4c4
+        border: none
+        font-size: 20px
+        color: #fff
+        border-radius: 5px
+        &:hover
+          background-color: darken(#00c4c4,10%)
+
+    &-adress
+      h2
+        color: #262626
+        font-family: Raleway
+        font-size: 17px
+        font-weight: 700
+        line-height: 25px
+
+      p
+        font-weight: 300
+        padding-bottom: 21px
+
+.footerColor
+  background-color: #262626
+  margin-top: 120px
+
+.footer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &_copy
+    color: #b9b9b9
+    font-family: Raleway
+    font-size: 16px
+    font-weight: 300
+  &_logo
+    color: #b9b9b9
+    font-size: 25px
+    padding: 0
+  &_made
+    color: #b9b9b9
+    font-family: Raleway
+    font-size: 15px
+    font-weight: 300
+    a
+      color: #ff2b58
+      font-weight: 700
+      text-decoration: none
+
+
