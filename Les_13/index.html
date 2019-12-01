@@ -117,7 +117,10 @@ design and product management.
 				<p>
 					Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.
 				</p>
-				<input type="button" value="CONTACT us">
+				<a href="javascript:PopUpShow()">
+					<input type="button" value="CONTACT us">
+				</a>
+
 			</fieldset>
 		</section>
 	</div>
@@ -129,6 +132,31 @@ design and product management.
 			© 2014. All Rights Reserved Ellipsis.com
 		</div>
 	</footer>
-
+	<div class="b-popup hidden" id="popup1">
+		<div class="b-popup-content">
+			<section class="wrapperSection">
+				<span class="close"><a href="javascript:PopUpHide()">Close</a></span>
+				<div class="wrapperForm">
+					<ul>
+						<li><a href="#one">Sign in</a></li>
+						<li><a href="#two">Join us</a></li>
+					</ul>
+					<form action="#" method="POST">
+						<label>Username</label><br>
+						<input class="flname" type="flname" name="flname"  required><br>
+						<label>Password</label><br>
+						<input class="password" type="password" name="password"  required><br>
+						<input id="checkbox" type="checkbox" checked>
+						<label for="checkbox">Keep me signed in</label><br>
+						<input type="submit" value="Sign in">
+					</form>
+					<span class="forgot"><a href="#">Forgot password</a></span>
+					<span><a href="#">Create an account</a></span>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
