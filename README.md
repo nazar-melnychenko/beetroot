@@ -9,6 +9,6 @@ Beetroot Home Work:)
 08. <a href="https://nazar-melnychenko.github.io/beetroot/Les_08/index.html">Coffee + Blog + Text</a>
 10. <a href="https://nazar-melnychenko.github.io/beetroot/Les_10/index.html">Blog</a> <a href="https://nazar-melnychenko.github.io/beetroot/Les_10/whoweare.html">Who we are</a>
 11. <a href="https://nazar-melnychenko.github.io/beetroot/Les_11/index.html">Cahee</a> 
-12. <a href="https://nazar-melnychenko.github.io/beetroot/Les_12/index.html">Contact</a> 
+12. <a href="https://nazar-melnychenko.github.io/beetroot/Les_12/index.html">Contact</a><br>
 12.1 <a href="https://nazar-melnychenko.github.io/beetroot/Les_12/nike.html">Nike</a> 
 13. <a href="https://nazar-melnychenko.github.io/beetroot/Les_13/index.html">Design LAB</a> 
