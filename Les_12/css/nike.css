@@ -1,0 +1,224 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/main_bg.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: MuseoSansRounded-100;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 800px;
+  min-height: 391px;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+  border-radius: 10px;
+  background-color: #111a28;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo {
+  width: 65px;
+  height: 33px;
+  position: absolute;
+  top: 24px;
+  left: 21px;
+}
+
+.nike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 81px 0 36px;
+  position: relative;
+  max-width: 392px;
+}
+
+.slick-dots {
+  padding-bottom: 21px;
+}
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.slick-dots li:nth-child(1) {
+  background-color: #1f273f;
+}
+.slick-dots li:nth-child(2) {
+  background-color: #fff;
+}
+.slick-dots li:nth-child(3) {
+  background-color: #ed3333;
+}
+.slick-dots li:nth-child(4) {
+  background-color: #29e3ea;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots .slick-active {
+  border: 2px #7e838b solid;
+}
+
+.rating {
+  border: none;
+  float: left;
+  padding-bottom: 27px;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 17px;
+  display: inline-block;
+  content: "★";
+}
+
+.rating > .half:before {
+  content: "★";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+  cursor: pointer;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+
+.circles {
+  position: absolute;
+  bottom: 21px;
+  left: 50%;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 56px;
+}
+.size h2 {
+  color: #e1e1e1;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  padding-bottom: 16px;
+}
+.size span {
+  color: #e1e1e1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.28px;
+  opacity: 0.54;
+  padding-bottom: 24px;
+}
+
+.selects {
+  display: flex;
+}
+
+.slct {
+  display: block;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 10px;
+  overflow: hidden;
+  color: white;
+  margin-right: 2px;
+}
+.slct:after {
+  content: "∨";
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  color: #4c525a;
+}
+
+.drop {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cecece;
+  border-top: none;
+  display: none;
+  position: absolute;
+  background-color: #111a28;
+  z-index: 3;
+}
+
+.drop li {
+  list-style: none;
+  border-top: 1px solid #e8e8e8;
+  cursor: pointer;
+  display: block;
+  color: #444;
+  padding: 3px 10px;
+  background-position: 10px -119px;
+}
+
+.drop li:hover {
+  background-color: #e8e8e8;
+  color: #222;
+}
+
+input[type=button] {
+  margin-top: 29px;
+  width: 184px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: #4c525a;
+  color: #e1e1e1;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.3;
+}
+input[type=button]:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "fontd6a6981db797f49f713352413e0e5d87";
+  font-family-src: url("https://nomail.com.ua/files/eot/d6a6981db797f49f713352413e0e5d87.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/d6a6981db797f49f713352413e0e5d87.woff") format("woff"), url("https://nomail.com.ua/files/woff2/d6a6981db797f49f713352413e0e5d87.woff2") format("woff2");
+}
+@font-face {
+  font-family: "MuseoSansRounded-100";
+  src: local("MuseoSansRounded-100"), url("https://nomail.com.ua/files/woff/d6a6981db797f49f713352413e0e5d87.woff");
+}

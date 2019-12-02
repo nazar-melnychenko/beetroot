@@ -7,10 +7,10 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 1) {
-			$('#nav-scroll').addClass('logo-scroll');
+			$('#nav-scroll').addClass('nav_logo-scroll');
 		}
 		else {
-			$('#nav-scroll').removeClass('logo-scroll');
+			$('#nav-scroll').removeClass('nav_logo-scroll');
 		}
 	});
 });
