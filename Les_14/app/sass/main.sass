@@ -1,0 +1,573 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	font-family: Raleway
+
+img
+	width: 100%
+
+
+//mainScreen
+.mainScreen
+	background: url("../img/bg_main_screen.png") no-repeat
+	background-attachment: fixed
+	background-size: cover
+	min-height: 870px
+	width: 100%
+	position: relative
+
+.wrapper
+	max-width: 1200px
+	min-width: 320px
+	margin: 0 auto
+	padding: 0 10px
+
+.header
+	background-color: rgba(255, 255, 255, 0.7)
+	width: 100%
+	position: fixed
+	z-index: 12
+
+.nav
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	
+	&_logo
+		color: #262626
+		font-family: Pacifico
+		font-size: 50px
+		font-weight: 400
+		padding: 20px 0
+		transition: all 0.3s linear
+		
+		&-scroll
+			padding: 0
+			font-size: 30px
+	
+	
+	&_links
+		ul
+			display: flex
+			flex-wrap: wrap
+			list-style: none
+		
+		&-link
+			padding: 5px 20px
+			
+			a
+				text-decoration: none
+				color: #262626
+				font-family: Raleway
+				font-size: 16px
+				font-weight: 700
+				padding-top: 6px
+				
+				&:hover
+					border-top: #ff6033 3px solid
+
+.mainTexts
+	padding-top: 360px
+	max-width: 365px
+	
+	&_mainText
+		margin-bottom: 34px
+		
+		h1
+			color: #262626
+			font-family: Raleway
+			font-size: 60px
+			font-weight: 900
+	
+	&_mainDesc
+		p
+			color: #262626
+			font-family: Raleway
+			font-size: 17px
+			font-weight: 300
+			line-height: 27px
+			margin-bottom: 31px
+
+.btn
+	input
+		width: 200px
+		height: 55px
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+		background-color: #ff6033
+		color: #fff
+		font-family: Raleway
+		font-size: 20px
+		font-weight: 300
+		border: none
+		cursor: pointer
+		position: relative
+		
+		&:hover
+			background-color: #f7504d
+		
+		&:active
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+			right: 2px
+
+.mous
+	margin: 0 auto
+	width: 24px
+	height: 40px
+	position: absolute
+	bottom: 56px
+	left: 50%
+	transform: translateX(-12px)
+
+//About Us
+
+.about
+	background-color: #00c4c4
+	background-image: radial-gradient(circle 1125px at center, rgba(0, 196, 196, 0.9) 0%, rgba(0, 183, 183, 0.9) 32%, rgba(0, 173, 173, 0.9) 68%, rgba(0, 156, 156, 0.9) 100%)
+
+.aboutScreen
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	padding: 70px 0 70px
+	
+	&_text
+		max-width: 499px
+		
+		h2
+			color: #fff
+			font-family: Raleway
+			font-size: 90px
+			font-weight: 700
+			padding-bottom: 34px
+		
+		p
+			color: #fff
+			font-family: Raleway
+			font-size: 17px
+			font-weight: 300
+			line-height: 27px
+
+//Our Services
+.services
+	background-color: #70bfff
+
+.servicesItems
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-items: center
+	padding: 100px 0
+
+.productItems
+	&_item
+		display: flex
+		max-width: 400px
+		min-height: 100px
+		align-items: center
+		text-align: center
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
+		background-color: #fff
+		margin: 20px
+		position: relative
+		
+		&:hover
+			cursor: pointer
+			background-color: #70bfff
+			
+			span
+				color: #fff
+		
+		span
+			display: inline-block
+			padding: 20px 10px
+			width: 100%
+			color: #262626
+			font-size: 20px
+			font-weight: 700
+			line-height: 27px
+		
+		
+		&-img
+			img
+				width: 47px
+				margin: 0 26px
+			
+			&:before
+				position: absolute
+				content: ''
+				top: 0
+				height: 100%
+				border-right: 1px #9d9d9d solid
+	
+	&_tomato
+		background: url("../img/tomato.png") no-repeat center
+		width: 462px
+		height: 527px
+		display: flex
+		align-items: center
+		
+		&-serv
+			color: #ffffff
+			font-size: 70px
+			font-weight: 700
+
+//Gallery
+
+.gallery
+	background-color: #ffe92f
+	padding: 100px 0 120px
+
+.headerWrap
+	text-align: center
+	
+	&_header
+		h2
+			color: #262626
+			font-size: 87px
+			font-weight: 700
+	
+	&_desc
+		margin: 0 auto
+		color: #262626
+		font-size: 17px
+		font-weight: 300
+		line-height: 27px
+		max-width: 590px
+		padding: 28px 0 46px
+
+.galleryWrap
+	img
+		transition: all 0.3s linear
+		
+		&:hover
+			cursor: pointer
+			box-shadow: 0 0 25px rgba(0, 0, 0, 0.7)
+			transform: scale(1.01)
+	
+	&_firstline
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		
+		&-big
+			flex-basis: 770px
+			margin: 15px
+		
+		&-small
+			display: flex
+			flex-wrap: wrap
+			flex-basis: 350px
+			
+			img
+				width: 100%
+				margin: 15px
+	
+	&_secondline
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		
+		&-first, &-second
+			flex-basis: 560px
+			margin: 15px
+
+.gallerybtn
+	margin: 50px auto 0
+	width: 200px
+	height: 55px
+	
+	input
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+		background-color: #5585a2
+
+//Subscribe
+.subscribe
+	background: url("../img/bg_sub.png") no-repeat right center
+	margin: 0 auto
+	max-width: 1500px
+	min-height: 550px
+	
+	&_header
+		color: #262626
+		font-size: 40px
+		font-weight: 700
+		padding: 145px 0 34px
+	
+	&_disc
+		max-width: 541px
+		color: #262626
+		font-size: 17px
+		font-weight: 300
+		line-height: 27px
+		padding-bottom: 31px
+	
+	&_form
+		input[type="email"]
+			max-width: 570px
+			width: 100%
+			height: 55px
+			border: 1px solid #262626
+			padding-left: 15px
+			opacity: 0.7
+			color: #262626
+			font-size: 15px
+			font-weight: 300
+	
+	&_btn
+		display: inline-block
+		padding: 30px
+		line-height: 27px
+		
+		input
+			width: 170px
+			font-size: 18px
+			background-color: #96b92c
+			
+			&:hover
+				background-color: #40485b
+
+//Blog
+.blog
+	background-image: url('../img/bg.png')
+	padding-bottom: 120px
+
+.blog h2
+	font-size: 70px
+	text-align: center
+	color: white
+	padding: 100px 0 30px
+	font-weight: 700
+
+
+.blog .header-text
+	margin: 0 auto
+	max-width: 600px
+	text-align: center
+	color: white
+	font-size: 17px
+	line-height: 25px
+	padding: 0 15px 50px
+	font-weight: 300
+
+
+.imgs
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	padding-bottom: 50px
+	cursor: pointer
+
+
+.imgs .general
+	margin: 10px
+	max-width: 370px
+	max-height: 310px
+	position: relative
+	box-shadow: -2px 4px 15px rgba(38, 38, 38, 0.7)
+
+
+.imgs .general .text:hover
+	background-color: rgba(38, 38, 38, 0.5)
+
+.imgs img
+	width: 100%
+	height: 100%
+
+
+.text
+	position: absolute
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-start
+	height: 100%
+	width: 100%
+	transition: background-color 0.3s linear
+
+
+.text .date
+	border-radius: 5px
+	background-color: rgba(38, 38, 38, 0.5)
+	display: inline-block
+	padding: 3px 12px 9px
+	text-align: center
+	margin: 30px 0 0 30px
+	color: #fff
+
+
+.text .textinside
+	margin: 0 0 20px 20px
+	color: #fff
+	letter-spacing: 1px
+
+
+.text .date .number
+	font-size: 32px
+	font-weight: 400
+
+
+.text .date .month
+	font-size: 21px
+	font-weight: 700
+
+
+.text .textinside p
+	max-width: 307px
+	font-size: 20px
+	font-weight: 700
+	padding-bottom: 20px
+	line-height: 25px
+
+
+.text .textinside span
+	font-size: 13px
+	font-weight: 300
+	color: rgba(255, 255, 255, 0.7)
+
+
+.blog input
+	display: block
+	margin: 0 auto
+
+.blog input:hover
+	background-color: #f7504d
+
+@media screen and (max-width: 1200px)
+	.galleryWrap_firstline
+		justify-content: center
+
+		&-small
+			flex-basis: 800px
+			justify-content: space-around
+			
+			img
+				flex-basis: 370px
+				margin: 15px 0
+
+//Contact
+.contactScreen
+	background: url("../img/bg_contact.png") no-repeat
+	background-size: cover
+
+.logo
+	color: #262626
+	font-family: Pacifico
+	font-size: 50px
+	font-weight: 400
+	padding: 20px 0
+
+.contact
+	&_head
+		text-align: center
+		padding-top: 101px
+		
+		h1
+			color: #262626
+			font-size: 90px
+			font-weight: 700
+	
+	&_desc
+		margin: 48px auto
+		max-width: 370px
+		text-align: center
+		line-height: 25px
+		p
+			color: #262626
+			font-size: 17px
+			font-weight: 300
+	
+	&_wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		text-align: left
+		form
+			input:not([type="submit"]),
+			textarea
+				border: none
+				width: 500px
+				height: 50px
+				background-color: #00c4c4
+				opacity: 0.5
+				color: #fff
+				font-size: 15px
+				font-weight: 300
+				line-height: 25px
+				padding-left: 20px
+				margin-bottom: 15px
+				&:hover
+					box-shadow: 5px 0px 0px 0px #355b82 inset
+					opacity: 1
+			
+			textarea
+				max-height: 250px
+				height: 250px
+				max-width: 500px
+			
+			input[type="submit"]
+				background-color: #00c4c4
+		
+		
+		&-adress
+			h2
+				color: #262626
+				font-size: 17px
+				font-weight: 700
+				line-height: 25px
+			
+			p
+				font-weight: 300
+				padding-bottom: 21px
+
+.footerColor
+	background-color: #262626
+	margin-top: 120px
+
+.footer
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	&_copy
+		color: #b9b9b9
+		font-size: 16px
+		font-weight: 300
+		padding: 25px 0
+	&_logo
+		color: #b9b9b9
+		font-family: Pacifico
+		font-size: 25px
+		padding: 0
+	&_made
+		color: #b9b9b9
+		font-size: 15px
+		font-weight: 300
+		a
+			color: #ff2b58
+			font-weight: 700
+			text-decoration: none
+
+@media screen and (max-width: 1000px)
+	.wrapper
+		text-align: center
+	
+	.nav
+		justify-content: center
+		
+		&_links
+			&-link
+				margin: 0 auto
+	
+	.mainTexts
+		margin: 0 auto
+	
+	.aboutScreen
+		justify-content: center
+
