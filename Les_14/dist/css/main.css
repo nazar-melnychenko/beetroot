@@ -23,9 +23,14 @@ img {
 
 .wrapper {
   max-width: 1200px;
+  width: 100%;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+section {
+  min-width: 320px;
 }
 
 .header {
@@ -46,7 +51,7 @@ img {
   font-family: Pacifico;
   font-size: 50px;
   font-weight: 400;
-  padding: 20px 0;
+  padding: 20px 20px 20px 0;
   transition: all 0.3s linear;
 }
 .nav_logo-scroll {
@@ -168,6 +173,9 @@ img {
   padding: 100px 0;
 }
 
+.productItems {
+  padding: 30px 0;
+}
 .productItems_item {
   display: flex;
   max-width: 400px;
@@ -477,10 +485,15 @@ img {
   justify-content: space-around;
   text-align: left;
 }
-.contact_wrapper form input:not([type=submit]),
-.contact_wrapper form textarea {
+.contact_wrapper-form {
+  max-width: 500px;
+  width: 100%;
+}
+.contact_wrapper-form form input:not([type=submit]),
+.contact_wrapper-form form textarea {
+  max-width: 500px;
+  width: 100%;
   border: none;
-  width: 500px;
   height: 50px;
   background-color: #00c4c4;
   opacity: 0.5;
@@ -491,18 +504,20 @@ img {
   padding-left: 20px;
   margin-bottom: 15px;
 }
-.contact_wrapper form input:not([type=submit]):hover,
-.contact_wrapper form textarea:hover {
+.contact_wrapper-form form input:not([type=submit]):hover,
+.contact_wrapper-form form textarea:hover {
   box-shadow: 5px 0px 0px 0px #355b82 inset;
   opacity: 1;
 }
-.contact_wrapper form textarea {
+.contact_wrapper-form form textarea {
   max-height: 250px;
   height: 250px;
   max-width: 500px;
+  width: 100%;
 }
-.contact_wrapper form input[type=submit] {
+.contact_wrapper-form form input[type=submit] {
   background-color: #00c4c4;
+  margin-bottom: 20px;
 }
 .contact_wrapper-adress h2 {
   color: #262626;
@@ -517,13 +532,13 @@ img {
 
 .footerColor {
   background-color: #262626;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .footer_copy {
@@ -542,6 +557,7 @@ img {
   color: #b9b9b9;
   font-size: 15px;
   font-weight: 300;
+  margin: 20px 0;
 }
 .footer_made a {
   color: #ff2b58;
@@ -549,9 +565,16 @@ img {
   text-decoration: none;
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .galleryWrap_firstline {
     justify-content: center;
+  }
+  .galleryWrap_firstline-big {
+    margin: 15px 0;
   }
   .galleryWrap_firstline-small {
     flex-basis: 800px;
@@ -559,6 +582,9 @@ img {
   }
   .galleryWrap_firstline-small img {
     flex-basis: 370px;
+    margin: 15px 0;
+  }
+  .galleryWrap_secondline-first, .galleryWrap_secondline-second {
     margin: 15px 0;
   }
 }
@@ -584,5 +610,152 @@ img {
 
   .contact_head h1 {
     font-size: 80px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .galleryWrap_firstline-small img {
+    flex-basis: 750px;
+  }
+
+  .subscribe_header span {
+    color: #96b92c;
+    text-shadow: 5px 10px 1px black;
+  }
+
+  .subscribe_disc span {
+    color: white;
+    text-shadow: 1px 1px 5px #96b92c;
+  }
+
+  .contact_wrapper-adress h2,
+.contact_wrapper-adress p {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  .contact_wrapper-form .btn {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
+@media screen and (max-width: 630px) {
+  .nav_links, .nav_logo {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: block;
+    width: 100%;
+    min-width: 320px;
+    position: relative;
+    height: 60px;
+  }
+  .hamburgerMenu .logohamb {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0;
+  }
+  .hamburgerMenu input {
+    opacity: 0;
+    position: absolute;
+    z-index: 5;
+  }
+  .hamburgerMenu label {
+    cursor: pointer;
+    font-size: 42px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  #menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    width: 42px;
+    height: 5px;
+  }
+
+  #menu-icon {
+    display: inline-block;
+    margin: 10px 0;
+    position: relative;
+  }
+
+  #menu-icon:before,
+#menu-icon:after {
+    content: "";
+    left: 0;
+    position: absolute;
+  }
+
+  #menu-icon:before {
+    top: -12px;
+  }
+
+  #menu-icon:after {
+    bottom: -12px;
+  }
+
+  .hamburgerMenu input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+  }
+
+  .hamburgerMenu input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .hamburgerMenu input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  /*** MENU ***/
+  /* Overlay */
+  .hamburgerMenu input:checked ~ #overlay {
+    background: #96b92c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transition: all 0.5s linear;
+  }
+
+  /* List */
+  .hamburgerMenu ul {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 700;
+    max-height: 0;
+    transition: all 0.1s linear;
+    position: relative;
+    top: -900px;
+  }
+
+  .hamburgerMenu input:checked ~ ul {
+    padding-top: 70px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s linear;
+  }
+
+  .hamburgerMenu ul > li {
+    margin: 25px 0;
+  }
+
+  .hamburgerMenu ul a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition-delay: inherit;
+  }
+
+  .hamburgerMenu ul a:hover {
+    color: black;
   }
 }
