@@ -275,6 +275,8 @@ table {
 }
 
 .mainScrean .hamburgerMenu label {
+  display: inline-block;
+  height: 28px;
   cursor: pointer;
   position: fixed;
   z-index: 2;
