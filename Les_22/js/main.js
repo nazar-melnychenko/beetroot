@@ -122,7 +122,7 @@ window.onload = function () {
 			return false;
 
 		} else {
-			alert('Ви отримаєте ' + Math.round(course * dollar) + ' євро.');
+			alert('Ви отримаєте ' + ((course * dollar).toFixed(2)) + ' євро.');
 		}
 
 
@@ -151,7 +151,7 @@ window.onload = function () {
 		let numberFiles = Math.floor(flashDriveMb / file);
 		let remainder = flashDriveMb % file;
 
-		alert('На флешку ' +flashDriveGb+ 'Гб поміститься файлів: ' +numberFiles+ '. Залишок вільного місця: ' +remainder+ 'Мб');
+		alert('На флешку ' +flashDriveGb+ 'Гб поміститься файлів: ' +numberFiles+ ' , по ' + file + ' Мб. Залишок вільного місця: ' +remainder+ 'Мб');
 
 	};
 
@@ -169,7 +169,7 @@ window.onload = function () {
 
 		}
 
-		let priceChocolates = prompt('Введіть кількість шоколадок');
+		let priceChocolates = prompt('Введіть ціну шоколадки');
 
 		if (priceChocolates.replace (/\d/g, '').length){
 			alert ('Введіть тільки цифри');
@@ -180,6 +180,11 @@ window.onload = function () {
 			return false;
 
 		}
+
+		// if (priceChocolates > amountMoney) {
+		// 	alert ('Ціна шоколадки більша, ніж грошей у Вашому кошильку))');
+		// 	return false;
+		// }
 
 		let buyChocolate = Math.floor(amountMoney / priceChocolates);
 
@@ -238,6 +243,6 @@ window.onload = function () {
 
 		}
 
-		alert('Сума нарахованих відсотків: ' + Math.round((depositAmount * percent * (month * 30)) / (365 * 100)) + 'грн.');
+		alert('Сума нарахованих відсотків: ' + (((depositAmount * percent * (month * 30)) / (365 * 100)).toFixed(2)) + 'грн.');
 	};
 };
