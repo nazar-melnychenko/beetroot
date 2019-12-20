@@ -9,13 +9,15 @@ window.onload = function () {
 			return false;
 
 		} else {
-			alert('Привіт ' + name + '!');
+			alert(`Привіт, ${name} !`);
 		}
 	};
 
 	task2.onclick = function () {
 
-		const year = 2019;
+		const yearss = new Date();
+
+		let year = yearss.getFullYear();
 
 		let years = prompt('Введіть свій рік народження');
 
@@ -41,7 +43,7 @@ window.onload = function () {
 
 		let lengthSquare = prompt('Введіть довжину сторони квадрата.');
 
-		if (lengthSquare.replace (/\d/g, '').length){
+		if (!lengthSquare.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
@@ -57,7 +59,7 @@ window.onload = function () {
 
 		let circleRadius = prompt('Введіть радіус круга');
 
-		if (circleRadius.replace (/\d/g, '').length){
+		if (!circleRadius.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
@@ -74,7 +76,7 @@ window.onload = function () {
 
 		let distance = prompt('Введіть відстань між містами');
 
-		if (distance.replace (/\d/g, '').length){
+		if (!distance.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
@@ -86,7 +88,7 @@ window.onload = function () {
 
 		let time = prompt('За скільки часу хочете добратись');
 
-		if (time.replace (/\d/g, '').length) {
+		if (!time.replace (/[^0-9\.]/g, '').length) {
 			alert('Введіть тільки цифри');
 			return false;
 
@@ -113,7 +115,7 @@ window.onload = function () {
 
 		let dollar = prompt('Введіть суму в доларах');
 
-		if (dollar.replace (/\d/g, '').length){
+		if (!dollar.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
@@ -122,7 +124,7 @@ window.onload = function () {
 			return false;
 
 		} else {
-			alert('Ви отримаєте ' + ((course * dollar).toFixed(2)) + ' євро.');
+			alert('Ви отримаєте ' + (( dollar / course).toFixed(2)) + ' євро.');
 		}
 
 
@@ -130,7 +132,7 @@ window.onload = function () {
 
 	task7.onclick = function () {
 
-		const file = 850;
+		const file = 820;
 
 		let flashDriveGb = prompt ('Введіть об\'єм флешки в Gb');
 
@@ -142,7 +144,7 @@ window.onload = function () {
 
 		let flashDriveMb = flashDriveGb * 1024;
 
-		if (flashDriveGb === '' || flashDriveMb < 850){
+		if (flashDriveGb === '' || flashDriveMb < file){
 			alert ('Ви не ввели об\'єм, або ввели менше 850 Мб!');
 			return false;
 
@@ -159,11 +161,11 @@ window.onload = function () {
 
 		let amountMoney = prompt('Введіть суму грошей');
 
-		if (amountMoney.replace (/\d/g, '').length){
+		if (!amountMoney.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
-		} else if (amountMoney === '' || amountMoney == 0){
+		} else if (amountMoney === '' || amountMoney === 0){
 			alert ('Ви не ввели суму, або ввели 0!');
 			return false;
 
@@ -171,20 +173,20 @@ window.onload = function () {
 
 		let priceChocolates = prompt('Введіть ціну шоколадки');
 
-		if (priceChocolates.replace (/\d/g, '').length){
+		if (!priceChocolates.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
-		} else if (priceChocolates === '' || priceChocolates == 0){
+		} else if (priceChocolates === '' || priceChocolates === 0){
 			alert ('Ви не ввели кількість, або ввели 0!');
 			return false;
 
 		}
 
-		// if (priceChocolates > amountMoney) {
-		// 	alert ('Ціна шоколадки більша, ніж грошей у Вашому кошильку))');
-		// 	return false;
-		// }
+		if (amountMoney < priceChocolates ) {
+			alert ('Ціна шоколадки більша, ніж грошей у Вашому кошильку))');
+			return false;
+		}
 
 		let buyChocolate = Math.floor(amountMoney / priceChocolates);
 
@@ -199,9 +201,21 @@ window.onload = function () {
 
 	task9.onclick = function () {
 
-		let number = prompt('Введіть цифри, букви щоб перевернути їх:');
+		let number = prompt('Введіть цифри щоб перевернути їх:');
 
-		alert(number.split('').reverse().join(''));
+		if (number.replace (/\d/g, '').length || number === ''){
+			alert ('Введіть цифри');
+			return false;
+
+		} else {
+			let result = 0;
+			while (number) {
+				result = result * 10 + number % 10;
+				number = Math.floor(number / 10);
+			}
+			alert(result);
+
+		}
 
 	};
 
@@ -209,7 +223,7 @@ window.onload = function () {
 
 		let depositAmount = prompt('Введіть суму вкладу');
 
-		if (depositAmount.replace (/\d/g, '').length){
+		if (!depositAmount.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
@@ -221,7 +235,7 @@ window.onload = function () {
 
 		let month = prompt('Введіть кількість місяців');
 
-		if (month.replace (/\d/g, '').length){
+		if (!month.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
@@ -233,7 +247,7 @@ window.onload = function () {
 
 		let percent = prompt('Введіть процентну ставку річних');
 
-		if (percent.replace (/\d/g, '').length){
+		if (!percent.replace (/[^0-9\.]/g, '').length){
 			alert ('Введіть тільки цифри');
 			return false;
 
