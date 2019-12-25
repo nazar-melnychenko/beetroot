@@ -14,3 +14,4 @@ Beetroot Home Work:)
 14. <a href="https://nazar-melnychenko.github.io/beetroot/Les_14/dist/index.html">Cahee (all)</a> 
 15. <a href="https://nazar-melnychenko.github.io/beetroot/Les_15/dist/index.html">Foliac</a> 
 23. <a href="https://nazar-melnychenko.github.io/beetroot/Les_23/index.html">JSTypesOperators</a> 
+24. <a href="https://nazar-melnychenko.github.io/beetroot/Les_24/index.html">Цикли</a> 
