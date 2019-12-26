@@ -15,3 +15,4 @@ Beetroot Home Work:)
 15. <a href="https://nazar-melnychenko.github.io/beetroot/Les_15/dist/index.html">Foliac</a> 
 23. <a href="https://nazar-melnychenko.github.io/beetroot/Les_23/index.html">JSTypesOperators</a> 
 24. <a href="https://nazar-melnychenko.github.io/beetroot/Les_24/index.html">Цикли</a> 
+25. <a href="https://nazar-melnychenko.github.io/beetroot/Les_25/index.html">Функції</a> 
