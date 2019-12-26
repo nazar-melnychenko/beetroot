@@ -125,10 +125,10 @@ window.onload = function () {
 				firstNumber = (secondNumber + firstNumber) / 2;
 			}else if (number === '=') {
 				alert(`Ваше число: ${Math.round(average)}`);
-				return false;
+				break;
 			} else {
 				alert('Ви не вибради значення');
-				return false;
+				break;
 			}
 
 
