@@ -1,0 +1,77 @@
+.mainScreen__header--navMobile
+	display: none
+	
+	.hamb
+		width: 37px
+		height: 37px
+		cursor: pointer
+		position: relative
+		
+		left: -15px
+		z-index: 99
+
+		span
+			display: inline-block
+			width: 100%
+			border-top: 2px solid #00e0d0
+			position: relative
+			transition: all 0.3s linear
+
+			&:before,
+			&:after
+				transition: all 0.3s linear
+				content: ""
+				border-top: 2px solid #00e0d0
+				position: absolute
+				width: 100%
+			
+			&:before
+				top: -12px
+				
+			&:after
+				top: 8px
+				
+		&__active
+			position: fixed
+			left: unset
+			right: 15px
+			span
+				border: transparent
+				
+				&:before
+					transform: rotate(135deg)
+					top: 0
+					
+				&:after
+					transform: rotate(-135deg)
+					top: 0
+			
+			
+	.overlay
+		position: fixed
+		height: 100vh
+		top: 0
+		left: -50%
+		width: 50%
+		background-image: linear-gradient(to right, #311d5e 0%, #09052f 100%)
+		z-index: 7
+		transition: all 0.3s linear
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		
+		ul
+			li
+				text-align: center
+				padding: 10px
+				a
+				 text-decoration: none
+					color: #00e0d0
+			
+		
+		&__active
+			left: 50%
+		
+		
+		

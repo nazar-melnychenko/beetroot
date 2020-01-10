@@ -1,0 +1,68 @@
+.expertise
+	padding: 62px 0 78px
+	font-family: Playfair Display, sans-serif
+	
+	h2
+		color: #413d4b
+		font-size: 22px
+		font-weight: 700
+		letter-spacing: 1.1px
+		text-align: center
+		
+	p
+		text-align: center
+		padding: 17px 0
+		opacity: 0.75
+		color: #2f2d35
+		font-size: 14px
+		font-weight: 400
+		letter-spacing: 1.05px
+		
+	hr
+		width: 50px
+		height: 2px
+		background-color: #413d4b
+		opacity: 0.3
+		margin: 0 auto
+		
+	.expertiseWrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		padding-top: 48px
+		
+		
+		&__item
+			padding: 39px 0
+			max-width: 310px
+			text-align: center
+			font-family: Roboto, sans-serif
+			border-left: 1px solid rgba(0, 0, 0, .1)
+			border-top: 1px solid rgba(0, 0, 0, .1)
+			cursor: pointer
+			
+			&:nth-child(-n+3)
+				border-top: none
+			&:nth-child(1),
+			&:nth-child(4)
+				border-left: none
+			&:hover > img
+				transition: all 0.5s linear
+				transform: scale(1.5)
+			
+		h3
+			padding: 35px 0 25px
+			color: #413d4b
+			font-size: 14px
+			font-weight: 900
+			letter-spacing: 0.7px
+			
+		p
+			opacity: 0.75
+			color: #333333
+			font-size: 14px
+			font-weight: 300
+			line-height: 22px
+			letter-spacing: 0.7px
+			padding: 0 25px
+		

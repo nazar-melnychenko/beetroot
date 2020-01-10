@@ -226,7 +226,7 @@ window.onload = function () {
 
 		let h = Math.floor(s / 3600);
 		let m = Math.floor((s - h * 3600) / 60);
-		s = Math.floor(s - h * 3600 - m * 60);
+		s = s - h * 3600 - m * 60;
 
 		return hms = (`${h} : ${m} : ${s}`);
 	};
@@ -234,6 +234,11 @@ window.onload = function () {
 	task9.onclick = function () {
 
 		let s = +prompt('Введіть секунди');
+
+		if (isNaN(s)){
+			alert('Не коректно ввели секунди');
+			return false;
+		}
 
 		alert(secondToHour(s));
 
