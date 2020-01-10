@@ -16,3 +16,5 @@ Beetroot Home Work:)
 23. <a href="https://nazar-melnychenko.github.io/beetroot/Les_23/index.html">JSTypesOperators</a> 
 24. <a href="https://nazar-melnychenko.github.io/beetroot/Les_24/index.html">Цикли</a> 
 25. <a href="https://nazar-melnychenko.github.io/beetroot/Les_25/index.html">Функції</a> 
+26. <a href="https://nazar-melnychenko.github.io/beetroot/Les_26/index.html">Об*єкти</a> 
+27. <a href="https://nazar-melnychenko.github.io/beetroot/Les_27/dist/index.html">Tajam</a> 
