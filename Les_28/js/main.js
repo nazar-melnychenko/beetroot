@@ -5,6 +5,9 @@ window.onload = function () {
 		let salaries = {
 			"Вася": 100,
 			"Петя": 300,
+			"Даша": 250,
+			"Вася": 100,
+			"Петя": 300,
 			"Даша": 250
 		};
 		let sum = 0;
@@ -33,7 +36,6 @@ window.onload = function () {
 		let newSalaries = Object.entries(salaries)
 			.filter(items => items[1] === maxSalaries)
 			.map(items => items[0]);
-			alert(newSalaries);
-
+			alert(`${newSalaries} отримує найбільшу зарплату!)`);
 	};
 };
