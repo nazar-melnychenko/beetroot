@@ -24,12 +24,16 @@ window.onload = function () {
 			"Іван": 250,
 			"Тарас": 150,
 		};
+
 		let salariesAll = [];
 		for (k in salaries) {
 			salariesAll.push(salaries[k]);
 		}
 		let maxSalaries = Math.max.apply(null, salariesAll);
+		let newSalaries = Object.entries(salaries)
+			.filter(items => items[1] === maxSalaries)
+			.map(items => items[0]);
+			alert(newSalaries);
 
-		alert(`Максимальна запрлата: ${maxSalaries} грн.`);
 	};
 };
