@@ -6,6 +6,8 @@ $(document).ready(function(){
 	});
 
 	$('.sayWrapper').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		arrows: false,
 		// autoplay: true,
 		asNavFor: '.sayWrapper-nav'
@@ -13,8 +15,21 @@ $(document).ready(function(){
 	$('.sayWrapper-nav').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
+		dots: false,
+		variableWidth: true,
+		centerMode: true,
 		focusOnSelect: true,
-		asNavFor: '.sayWrapper'
+		asNavFor: '.sayWrapper',
+		nextArrow: '<img class="nextArrowImg" src="../img/feedback/back.png" alt="Next Picture">',
+		prevArrow: '<img class="prevArrowImg" src="../img/feedback/forward.png" alt="Previous Picture">',
+		responsive: [
+			{
+				breakpoint: 420,
+				settings: {
+					arrows: false
+				}
+			},
+		]
 	});
 
 	$('.hamb').on('click', function () {
