@@ -18,3 +18,5 @@ Beetroot Home Work:)
 25. <a href="https://nazar-melnychenko.github.io/beetroot/Les_25/index.html">Функції</a> 
 26. <a href="https://nazar-melnychenko.github.io/beetroot/Les_26/index.html">Об*єкти</a> 
 27. <a href="https://nazar-melnychenko.github.io/beetroot/Les_27/dist/index.html">Tajam</a> 
+28. <a href="https://nazar-melnychenko.github.io/beetroot/Les_28/dist/index.html">Об*єкти_2</a> 
+29. <a href="https://nazar-melnychenko.github.io/beetroot/Les_29/dist/index.html">Об*єкти_3</a> 
