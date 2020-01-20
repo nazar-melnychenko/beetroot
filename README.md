@@ -22,3 +22,4 @@ Beetroot Home Work:)
 29. <a href="https://nazar-melnychenko.github.io/beetroot/Les_29/index.html">Об*єкти_3</a> 
 30. <a href="https://nazar-melnychenko.github.io/beetroot/Les_30/index.html">Класи</a> 
 31. <a href="https://nazar-melnychenko.github.io/beetroot/Les_31/index.html">DOM</a> 
+32. <a href="https://nazar-melnychenko.github.io/beetroot/Les_32/index.html">Події</a> 
