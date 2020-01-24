@@ -25,3 +25,4 @@ Beetroot Home Work:)
 32. <a href="https://nazar-melnychenko.github.io/beetroot/Les_32/index.html">Події</a> 
 33. <a href="https://nazar-melnychenko.github.io/beetroot/Les_33/index.html">UI Tabs</a> 
 33.1. <a href="https://nazar-melnychenko.github.io/beetroot/Les_33/calc.html">Calc</a> 
+34. <a href="https://nazar-melnychenko.github.io/beetroot/Les_34/index.html">Slick slider</a> 
