@@ -5,36 +5,29 @@ window.onload = () => {
 	let result = document.querySelector('.result');
 
 	btn.onclick = () => {
-		let xhr = new XMLHttpRequest();
-		xhr.open('GET', `http://www.omdbapi.com/?apikey=518ca0ce&t=${((input).value)}&type=${((select).value)}`, false);
-		xhr.send();
-		if (xhr.readyState !== 4) {
-			result.innerHTML = ( xhr.status + ': ' + xhr.statusText );
-		} else {
-			let movis = JSON.parse(xhr.responseText);
-			result.innerHTML = ( movis.Title );
-			let more = document.createElement('input');
-			more.value="Більше";
-			more.type="button";
-			more.style.cssText = "cursor: pointer; margin-left: 20px;";
-			result.appendChild(more);
-			if (movis.Error) {
-				result.innerHTML = (movis.Error);
-			}
-
-			more.onclick = () => {
-				result.innerHTML = '';
-				for (let k in movis){
-					result.innerHTML += (k+' - '+movis[k]+'<br>');
-
+		fetch (`http://www.omdbapi.com/?apikey=518ca0ce&t=${((input).value)}&type=${((select).value)}`)
+			.then(response => response.json())
+			.then(response => {
+				result.innerHTML = ( response.Title );
+				let more = document.createElement('input');
+					more.value="Більше";
+					more.type="button";
+					more.style.cssText = "cursor: pointer; margin-left: 20px;";
+					result.appendChild(more);
+				if (response.Error) {
+					result.innerHTML = (response.Error);
 				}
-				if (movis.Poster) {
-					result.innerHTML += (`<img src="${movis.Poster}" alt="">`);
+
+				more.onclick = () => {
+					result.innerHTML = '';
+					for (let k in response){
+						result.innerHTML += (k+' - '+response[k]+'<br>');
+
+					}
+					if (response.Poster) {
+						result.innerHTML += (`<img src="${response.Poster}" alt="">`);
+					}
 				}
-			}
-
-
-
-		}
+			});
 	}
 };
