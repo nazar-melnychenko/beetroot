@@ -44,6 +44,7 @@ window.onload = () => {
 				return data;
 			}
 			function renderText(data) {
+				result.innerHTML = '';
 				for (let key in data.results) {
 					result.innerHTML += `${data.results[key].name}<input type="button" value="Більше" class ="more"><br>`;
 				}
@@ -153,6 +154,7 @@ window.onload = () => {
 			}
 
 			getData('https://swapi.co/api/people/')
+				.then(result.innerHTML = 'Виконується пошук...')
 				.then(data => renderText(data))
 				.then(data => renderBtn(data))
 				.catch(err => result.innerHTML = err);
