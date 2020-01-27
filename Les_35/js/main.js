@@ -13,7 +13,7 @@ window.onload = () => {
 	btn.onclick = () => {
 		result.innerHTML = '';
 		if ((input).value !== '') {
-			fetch (`http://www.omdbapi.com/?apikey=518ca0ce&t=${((input).value)}&type=${((select).value)}`)
+			fetch (`http://www.omdbapi.comm/?apikey=518ca0ce&t=${((input).value)}&type=${((select).value)}`)
 				.then(response => response.json())
 				.then(response => {
 					result.innerHTML = ( response.Title );
@@ -36,7 +36,8 @@ window.onload = () => {
 							result.innerHTML += (`<img src="${response.Poster}" alt="">`);
 						}
 					}
-				});
+				})
+				.catch(err => result.innerHTML = err);
 		} else {
 			async function getData(url) {
 				const response = await fetch(url);
