@@ -152,7 +152,7 @@ window.onload = () => {
 
 			}
 
-			getData('https://swapi.cos/api/people/')
+			getData('https://swapi.co/api/people/')
 				.then(data => renderText(data))
 				.then(data => renderBtn(data))
 				.catch(err => result.innerHTML = err);
