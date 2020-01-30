@@ -1,0 +1,47 @@
+.menuu
+	background-color: #998
+	width: 320px
+	position: fixed
+	right: -320px
+	height: 100vh
+	transition: right 0.3s linear
+	display: flex
+	justify-content: center
+	z-index: 100
+	
+.activeMenu
+	right: 0
+
+.siteWrapper
+	position: relative
+	left: 0
+	transition: left 0.3s linear
+	
+
+.activeWrapper
+	left: -320px
+	
+.wrapperMenu
+	margin-top: 20px
+	ul
+		li
+			margin: 20px
+			text-align: center
+			transition: all 0.3s linear
+			&:hover
+				transform: scale(1.7)
+			a
+				color: #7beec7
+				font-family: Open-Sans,sans-serif
+				font-size: 17px
+				font-weight: 400
+				line-height: 48px
+				text-transform: uppercase
+				text-decoration: none
+				
+	&__social
+		a
+			color: #7beec7 !important
+			transition: all 0.3s linear
+			&:hover
+				transform: scale(1.7)
