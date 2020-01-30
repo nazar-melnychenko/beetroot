@@ -27,3 +27,5 @@ Beetroot Home Work:)
 33.1. <a href="https://nazar-melnychenko.github.io/beetroot/Les_33/calc.html">Calc</a> 
 34. <a href="https://nazar-melnychenko.github.io/beetroot/Les_34/index.html">Slick slider</a> 
 35. <a href="https://nazar-melnychenko.github.io/beetroot/Les_35/index.html">AJAX</a> 
+36. <a href="https://nazar-melnychenko.github.io/beetroot/Les_36/index.html">Map</a> 
+37. <a href="https://nazar-melnychenko.github.io/beetroot/Les_37/dist/index.html">AKAD.</a> 
