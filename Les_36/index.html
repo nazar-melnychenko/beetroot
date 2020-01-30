@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Google maps</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<h3>My Google Maps Demo</h3>
+
+<div id="map"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83909.92471888887!2d24.647088774551584!3d48.91186466737755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16c34b0381d%3A0xd6d32394e59e41c2!2z0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQuiwg0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3NjAwMA!5e0!3m2!1suk!2sua!4v1580289870926!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<script>
+  function initMap() {
+	  let uluru = {lat: 48.5522, lng: 24.4238};
+	  let map = new google.maps.Map(
+		document.getElementById('map'), {zoom: 4, center: uluru});
+	 let marker = new google.maps.Marker({position: uluru, map: map});
+  }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe4ITeJILlE15eDwhMzsWgKHC5kF7uIF0&callback=initMap">
+</script>
+
+</body>
+</html>
+<!--Here is your key: 518ca0ce-->
+<!--OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=518ca0ce-->
+<!--Click the following URL to activate your key: http://www.omdbapi.com/apikey.aspx?VERIFYKEY=1effcda2-a144-40f3-bc97-d1ce916085e9-->

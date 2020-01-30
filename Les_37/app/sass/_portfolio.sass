@@ -1,0 +1,105 @@
+.portfolio
+	padding-top: 130px
+	.turquoise
+		color: #60606e
+		font-family: Montserrat,sans-serif
+		font-size: 30px
+		font-weight: 700
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		margin: 0 auto
+		position: relative
+		max-width: 300px
+		z-index: 1
+		&:before
+			top: 25px
+			left: 17px
+			
+	.desc
+		margin: 0 auto
+		max-width: 765px
+		height: 38px
+		color: #60606e
+		font-family: Open-Sans,sans-serif
+		font-size: 14px
+		font-weight: 300
+		line-height: 24px
+		padding: 30px 0 100px
+		letter-spacing: 0.7px
+		text-align: center
+		
+	&__category
+		font-family: Montserrat,sans-serif
+		h2
+			color: #60606e
+			font-size: 30px
+			font-weight: 700
+			line-height: 48px
+			text-transform: uppercase
+		ul
+			margin: 40px 0 150px
+			li
+				font-family: Montserrat,sans-serif
+				font-size: 14px
+				font-weight: 700
+				margin-bottom: 15px
+				text-transform: uppercase
+				text-decoration: none
+				color: #60606e
+				padding: 4px
+				transition: all 0.3s linear
+				margin-left: 20px
+				border-radius: 2px
+				cursor: pointer
+				max-width: 150px
+			.active
+				margin-left: 10px
+				background-color: #7beec7
+				color: white
+				
+			
+	&__items
+		padding: 0
+		margin-bottom: 150px
+		&--item
+			padding-bottom: 25px
+			img
+				margin-bottom: -4px
+			.elem
+				position: relative
+				width: 100%
+				height: 100%
+				&:hover > .hover
+					opacity: 1
+					cursor: pointer
+					.text
+						bottom: 15px
+				.hover
+					position: absolute
+					width: 100%
+					height: 100%
+					background-color: #7beec7
+					top: 0
+					left: 0
+					opacity: 0
+					transition: opacity 0.3s linear
+					font-family: Poppins, sans-serif
+					overflow: hidden
+					.text
+						position: absolute
+						left: 15px
+						bottom: -100px
+						transition: bottom 0.5s linear
+						h2
+							font-size: 14px
+							font-weight: 400
+							text-transform: uppercase
+							letter-spacing: 3px
+						p
+							font-size: 7px
+							font-weight: 400
+							text-transform: uppercase
+							letter-spacing: 2.4px
+
+		

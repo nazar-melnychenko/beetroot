@@ -1,0 +1,114 @@
+header
+	background: url("../img/header/header_bg.png")
+	background-size: cover
+	min-height: 100vh
+	padding: 0 5px
+	font-family: Montserrat,sans-serif
+	color: #60606e
+	position: relative
+
+	nav
+		.logo
+			font-size: 18px
+			font-weight: 700
+			line-height: 48px
+			text-transform: uppercase
+			a
+				text-decoration: none
+				color: #60606e
+			
+		.hamburger
+			cursor: pointer
+			width: 32px
+			height: 23px
+			span
+				width: 15px
+				height: 1px
+				background-color: #60606e
+				position: relative
+				display: inline-block
+				transition: width 0.3s linear
+
+				&:before,
+				&:after
+					content: ''
+					height: 2px
+					background-color: #60606e
+					position: absolute
+				&:before
+					width: 31px
+					top: -8px
+				&:after
+					width: 23px
+					top: 7px
+					transition: width 0.3s linear
+			&:hover > span,
+			&:hover > span:after
+				width: 31px
+				background-color: #7beec7
+	
+				
+	.main
+		margin: 0 auto
+		max-width: 500px
+		text-align: center
+		padding-top: 168px
+		
+		span
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 99px
+			height: 30px
+			margin: 0 auto
+			background-color: #7beec7
+			color: #60606e
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			
+		h1
+			border: 10px solid #60606e
+			color: #60606e
+			font-size: 40px
+			font-weight: 700
+			text-transform: uppercase
+			padding: 17px 10px
+			margin-bottom: 30px
+			letter-spacing: 2px
+			
+		p
+			color: #60606e
+			font-family: Open-Sans,sans-serif
+			font-size: 16px
+			font-weight: 300
+			line-height: 24px
+			letter-spacing: 0.7px
+			
+	.history
+		position: relative
+		top: 125px
+		font-family: Montserrat,sans-serif
+		img
+			padding: 0
+		&__text
+			display: flex
+			flex-direction: column
+			
+			h1
+				font-size: 30px
+				font-weight: 700
+				text-transform: uppercase
+				padding: 15px 0
+				position: relative
+				z-index: 1
+				
+			p
+				font-family: Open-Sans,sans-serif
+				font-size: 17px
+				font-weight: 300
+				line-height: 30px
+			
+		
+
+		
