@@ -36,7 +36,5 @@ $(window).ready(function() {
 	 $('.siteWrapper').toggleClass('activeWrapper');
 	 $('.menuu').toggleClass('activeMenu');
   });
-
-
-
+  
 });
