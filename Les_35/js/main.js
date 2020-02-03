@@ -12,8 +12,8 @@ window.onload = () => {
 
 	btn.onclick = () => {
 		result.innerHTML = '';
-		if ((input).value !== '') {
-			fetch (`http://www.omdbapi.comm/?apikey=518ca0ce&t=${((input).value)}&type=${((select).value)}`)
+		if (input.value !== '') {
+			fetch (`http://www.omdbapi.com/?apikey=518ca0ce&t=${((input).value)}&type=${((select).value)}`)
 				.then(response => response.json())
 				.then(response => {
 					result.innerHTML = ( response.Title );
@@ -39,6 +39,9 @@ window.onload = () => {
 				})
 				.catch(err => result.innerHTML = err);
 		} else {
+
+		  let isFirstLoad = true;
+
 			async function getData(url) {
 				const response = await fetch(url);
 				const data = await response.json();
@@ -71,20 +74,30 @@ window.onload = () => {
 					});
 				});
 			}
+		  let curentBtn;
 			function showText() {
 				let btnsPag = document.querySelectorAll('.pag');
+				while(isFirstLoad) {
+				  btnsPag[0].style.color = "red";
+				  isFirstLoad = false;
+				}
 				btnsPag.forEach((items) => {
-
 					items.addEventListener('click',() =>{
-						console.log(items);
+						 btnsPag.forEach( (items)=>{
+							items.style.color = "black";
+					  });
+
 						result.innerHTML = '';
-						getData(`https://swapi.co/api/people/?page=${(items).value}`).then(data => {
+						getData(`https://swapi.co/api/people/?page=${items.value}`).then(data => {
 							let more = document.querySelectorAll('.more');
 							renderText(data);
 							renderPopup(more,data);
+						 	items.style.color = "red";
+						   curentBtn = items.value
 						})
 					})
 				})
+
 			}
 			function renderBtn() {
 				let firstPage = 1,
@@ -115,6 +128,7 @@ window.onload = () => {
 					for (let i = firstPage; i <= lastPage; i++){
 						let btnPag = document.createElement('input');
 						createBtn(i, 'pag',btnPag);
+
 					}
 					createBtn('>', 'btnNext',btnNext);
 
@@ -124,6 +138,7 @@ window.onload = () => {
 				for (let i = firstPage; i <= lastPage; i++){
 					let btnPag = document.createElement('input');
 					createBtn(i, 'pag',btnPag);
+
 				}
 
 				createBtn('>', 'btnNext',btnNext);
