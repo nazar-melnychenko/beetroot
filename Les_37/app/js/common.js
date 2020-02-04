@@ -17,7 +17,6 @@ $(window).ready(function() {
 		  animationEngine : "jquery"
 		}
 	 });
-	 return false;
   });
 
   (function initMap() {
@@ -27,14 +26,4 @@ $(window).ready(function() {
 	 let marker = new google.maps.Marker({position: uluru, map: map});
   })();
 
-  $('.hamburger').on('click', function () {
-		$('.siteWrapper').toggleClass('activeWrapper');
-	 	$('.menuu').toggleClass('activeMenu');
-  });
-
-  $('.wrapperMenu a').on('click', function () {
-	 $('.siteWrapper').toggleClass('activeWrapper');
-	 $('.menuu').toggleClass('activeMenu');
-  });
-  
 });

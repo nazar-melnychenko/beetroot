@@ -1,20 +1,26 @@
 $(window).ready(function() {
-  let $items = $('.portfolio__items');
-  $items.isotope({
-	 filter: '*',
+  $('.hamburger').on('click', function () {
+	 $('.siteWrapper').toggleClass('activeWrapper');
+	 $('.menuu').toggleClass('activeMenu');
   });
 
-  $('ul li a').click(function(){
-	 $('ul .active').removeClass('active');
-	 $(this).addClass('active');
-
-	 let selector = $(this).attr('data-filter');
-	 $items.isotope({
-		filter: selector,
-		animationOptions: {
-		  duration: 500,
-		  animationEngine : "jquery"
-		}
-	 });
+  $('.wrapperMenu a').on('click', function () {
+	 $('.siteWrapper').toggleClass('activeWrapper');
+	 $('.menuu').toggleClass('activeMenu');
   });
+
+
+  $(window).scroll((e) => {
+	 let headerDesc= $('.header__desc');
+    let opacity =(100/(e.currentTarget.scrollY))/10;
+	 headerDesc.css({
+		"paddingTop": `${e.currentTarget.scrollY}px`,
+		"opacity": `${opacity}`
+  });
+	 if (e.currentTarget.scrollY === 0) {
+		headerDesc.css("opacity", "1");
+	 }
+
+  });
+
 });
