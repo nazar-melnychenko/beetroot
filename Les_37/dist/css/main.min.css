@@ -221,7 +221,7 @@ img {
 }
 
 header {
-  background: url("../../img/index/header/header_bg.png");
+  background: url("../img/index/header/header_bg.png");
   background-size: cover;
   min-height: 100vh;
   padding: 0 5px;
