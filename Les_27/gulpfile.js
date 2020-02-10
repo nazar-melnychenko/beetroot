@@ -17,20 +17,20 @@ const 	gulp 			= require('gulp'),
 
 const path = {
 	app: {
-		app:			'app/',
-		html: 			'app/*.html',
-		libsStyles: 	'app/libs/**/*.{sass,scss,css}',
-		libsJs: 		'app/libs/**/*.js',
-		js: 			'app/js/',
-		sass: 			'app/sass/main.sass',
-		img: 			'app/img/**/*.*',
-		fonts: 			'app/fonts/**/*.*',
-		css: 			'app/css/'
+		app:			'App/',
+		html: 			'App/*.html',
+		libsStyles: 	'App/libs/**/*.{sass,scss,css}',
+		libsJs: 		'App/libs/**/*.js',
+		js: 			'App/js/',
+		sass: 			'App/sass/main.sass',
+		img: 			'App/img/**/*.*',
+		fonts: 			'App/fonts/**/*.*',
+		css: 			'App/css/'
 	},
 	watch: {
-		html: 			'app/**/*.html',
-		js: 			'app/js/**/common.js',
-		sass: 			'app/sass/**/*.sass',
+		html: 			'App/**/*.html',
+		js: 			'App/js/**/common.js',
+		sass: 			'App/sass/**/*.sass',
 	},
 	build: {
 		html: 			'dist',
@@ -44,7 +44,7 @@ const path = {
 
 const config = {
 	server: {
-		baseDir: 		'./app'
+		baseDir: 		'./App'
 	},
 	tunnel: false
 };
