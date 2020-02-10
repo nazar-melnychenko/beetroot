@@ -31,4 +31,4 @@ Beetroot Home Work:)
 37. <a href="https://nazar-melnychenko.github.io/beetroot/Les_37/dist/index.html">AKAD.</a> 
 38. <a href="https://nazar-melnychenko.github.io/beetroot/Les_38_EXAM/dist/index.html">EXAM</a> 
 39. <a href="https://nazar-melnychenko.github.io/beetroot/Les_39/build/index.html">Реактивні карти :)</a> 
-40. <a href="https://nazar-melnychenko.github.io/beetroot/Les_40/index.html">CSS-анімації</a> 
+40. <a href="https://nazar-melnychenko.github.io/beetroot/Les_40/build/index.html">To Do List</a> 
