@@ -1,0 +1,158 @@
+@import "_reset.sass"
+
+*
+	transition: all .1s ease-in
+	box-sizing: border-box
+
+$font-firts:    Lato, sans-serif
+
+.wrapper
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px
+
+@import "header"
+@import "hamburgerMenu"
+
+@mixin lato-light
+	font-family: 'Lato', sans-serif
+	font-weight: 300
+@mixin lato-regular
+	font-family: 'Lato', sans-serif
+	font-weight: 400
+@mixin lato-bold
+	font-family: 'Lato', sans-serif
+	font-weight: 700
+
+.matsevich
+	.about-me
+		display: flex
+		justify-content: center
+		flex-flow: column wrap
+		&__wrapper
+			max-width: 1200px
+			min-width: 320px
+			margin: 0 auto
+		&__text
+			text-align: center
+			color: #5a5a5a
+			@include lato-regular
+			font-size: 16px
+			line-height: 35px
+			margin-bottom: 80px
+
+	.title
+		text-align: center
+		color: #3695ff
+		@include lato-light
+		font-size: 50px
+		padding-top: 100px
+		padding-bottom: 100px
+	.expert-in
+		background: #f1f8ff
+		&__wrapper
+			max-width: 1200px
+			min-width: 320px
+			margin: 0 auto
+		.conteiner
+			max-width: 1140px
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-flow: row wrap
+			margin: 0 auto
+			&__item
+				max-width: 360px
+				padding: 15px
+				margin-bottom: 100px
+				display: flex
+				justify-content: center
+				flex-flow: column wrap
+				align-items: center
+				&:hover
+					box-shadow: 2px 2px 8px 6px #ffffff, -2px -2px 8px 6px #ffffff
+					cursor: pointer
+				&:hover img
+					transform: scale(1.03)
+					transition: 0.5s
+				&:active img
+					transform: scale(0.85)
+
+				.item__title
+					@include lato-bold
+					font-size: 24px
+					line-height: 24px
+					color: #3677fd
+					padding-bottom: 20px
+					padding-top: 100px
+					text-align: center
+				.item__text
+					@include lato-regular
+					font-size: 16px
+					line-height: 35px
+					color: #5a5a5a
+					text-align: center
+				&:nth-child(2), &:nth-child(5)
+					width: 310px
+
+			&__img
+				width: 140px
+				height: 140px
+				border: 1px solid #b7c0c9
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				
+				
+					
+
+@import "clients"
+.latestworks_h
+  margin: auto
+  line-height: 180%
+  padding-top: 50px
+  width: 90%
+  font-family: $font-firts
+  text-align: center
+  word-spacing: 3px
+  color: #3695ff
+  font-size: 40px
+  font-weight: lighter
+
+.latestworks_imgs
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	padding-top: 50px
+
+.latestworks_first
+	margin: 30px 15px
+
+.web_img
+	width: 100%
+.latestworks_second
+	margin: 30px 15px
+
+.latestworks_second:hover
+	transform: scale(1.04)
+	cursor: pointer
+
+.latestworks_first:hover
+	transform: scale(1.04)
+	cursor: pointer
+
+.stas_full
+	padding-top: 30px
+	padding-bottom: 30px
+
+@media screen and (max-width: 782px)
+	.latestworks_second,
+	.latestworks_first
+		margin: 10px
+	
+	
+	
+	
+@import "fonts"
+@import "media"
