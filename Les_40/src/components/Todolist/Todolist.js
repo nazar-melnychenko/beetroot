@@ -38,6 +38,7 @@ class Todolist extends React.Component {
   onDeleteItem = (id) => {
 		this.state.todo.splice(id, 1);
 		this.setState({state: this.state.todo});
+	 	this.setState({state: this.state.btnVis = true});
   };
 
   onDoneItem = (id) => {
@@ -52,6 +53,7 @@ class Todolist extends React.Component {
 	 }
 	 console.log(this.state.todo);
 	 this.setState({state: this.state.todo});
+	 this.setState({state: this.state.btnVis = true});
   };
 
   onEditItem = (id) => {
