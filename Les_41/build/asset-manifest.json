@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/beetroot/Les_41/build/static/css/main.602eadfc.chunk.css",
+    "main.js": "/beetroot/Les_41/build/static/js/main.3781eac3.chunk.js",
+    "main.js.map": "/beetroot/Les_41/build/static/js/main.3781eac3.chunk.js.map",
+    "runtime-main.js": "/beetroot/Les_41/build/static/js/runtime-main.a9dc15f4.js",
+    "runtime-main.js.map": "/beetroot/Les_41/build/static/js/runtime-main.a9dc15f4.js.map",
+    "static/js/2.ade65c16.chunk.js": "/beetroot/Les_41/build/static/js/2.ade65c16.chunk.js",
+    "static/js/2.ade65c16.chunk.js.map": "/beetroot/Les_41/build/static/js/2.ade65c16.chunk.js.map",
+    "index.html": "/beetroot/Les_41/build/index.html",
+    "precache-manifest.b09599e23fdbfa969ce6566e948ea29e.js": "/beetroot/Les_41/build/precache-manifest.b09599e23fdbfa969ce6566e948ea29e.js",
+    "service-worker.js": "/beetroot/Les_41/build/service-worker.js",
+    "static/css/main.602eadfc.chunk.css.map": "/beetroot/Les_41/build/static/css/main.602eadfc.chunk.css.map",
+    "static/js/2.ade65c16.chunk.js.LICENSE.txt": "/beetroot/Les_41/build/static/js/2.ade65c16.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9dc15f4.js",
+    "static/js/2.ade65c16.chunk.js",
+    "static/css/main.602eadfc.chunk.css",
+    "static/js/main.3781eac3.chunk.js"
+  ]
+}
