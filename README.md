@@ -34,3 +34,4 @@ Beetroot Home Work:)
 40. <a href="https://nazar-melnychenko.github.io/beetroot/Les_40/build/index.html">To Do List</a> 
 41. <a href="https://nazar-melnychenko.github.io/beetroot/Portf/dist/index.html">Portf</a> 
 42. <a href="https://nazar-melnychenko.github.io/beetroot/Les_41/build/index.html">Login</a> 
+43. <a href="https://nazar-melnychenko.github.io/beetroot/Les_42/build/index.html">React swapi</a> 
