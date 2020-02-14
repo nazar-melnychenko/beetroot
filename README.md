@@ -32,5 +32,5 @@ Beetroot Home Work:)
 38. <a href="https://nazar-melnychenko.github.io/beetroot/Les_38_EXAM/dist/index.html">EXAM</a> 
 39. <a href="https://nazar-melnychenko.github.io/beetroot/les_39/build/index.html">Реактивні карти :)</a> 
 40. <a href="https://nazar-melnychenko.github.io/beetroot/Les_40/build/index.html">To Do List</a> 
-40. <a href="https://nazar-melnychenko.github.io/beetroot/Portf/dist/index.html">Portf</a> 
-40. <a href="https://nazar-melnychenko.github.io/beetroot/Les_41/build/index.html">Login</a> 
+41. <a href="https://nazar-melnychenko.github.io/beetroot/Portf/dist/index.html">Portf</a> 
+42. <a href="https://nazar-melnychenko.github.io/beetroot/Les_41/build/index.html">Login</a> 
