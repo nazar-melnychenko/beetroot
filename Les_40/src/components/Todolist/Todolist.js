@@ -7,11 +7,8 @@ class Todolist extends React.Component {
 	  this.state = {
 	    value: '',
 		 todo: [
-		   {value: 'Прочитати документацію React', done: false},
-		   {value: 'Зробити домашку', done: false},
-		   {value: 'Залити на Git', done: false},
-		   {value: 'Поспати :)', done: false},
-		   {value: 'Прийти на заняття :)', done: false},
+		   {value: 'Buy bread, eggs', done: false},
+		   {value: 'Make breakfast :)', done: false},
 		   ],
 		 btnVis: true
 	  }
@@ -76,7 +73,7 @@ class Todolist extends React.Component {
 	  return(
 
 		 <div className="todoWrapper">
-			<h1>To do:</h1>
+			<h1>To do List:</h1>
 			<div className="todoWrapper__items">
 			  {this.state.todo.map((item,i) =>
 				 <div key= { i }  className="todoWrapper__items--item">

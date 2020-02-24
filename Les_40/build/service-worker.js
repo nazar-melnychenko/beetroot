@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/beetroot/Les_40/build/precache-manifest.eecca442919738251c005d5978e26334.js"
+  "/beetroot/Les_40/build/precache-manifest.019a4bdb12fd65f22e1eb0293e8a2c46.js"
 );
 
 self.addEventListener('message', (event) => {
