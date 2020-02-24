@@ -119,7 +119,6 @@ img {
 
 .wrapper {
   max-width: 1140px;
-  min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -438,7 +437,7 @@ img {
 
 .contact h2 {
   color: #48bf72;
-  font-family: BigJohn;
+  font-family: BigJohn, sans-serif;
   font-size: 26px;
   font-weight: 400;
   text-align: center;
@@ -449,7 +448,7 @@ img {
   margin: 53px auto 53px;
   text-align: center;
   max-width: 700px;
-  border: 1px solid red;
+  width: calc(100% - 20px);
 }
 
 .contact-form .general {
@@ -566,6 +565,7 @@ footer {
 .footer_social ul {
   display: -webkit-box;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
           justify-content: center;
 }
