@@ -12,6 +12,7 @@ const 	gulp 			= require('gulp'),
 		concat 			= require('gulp-concat'),
 		browserSync 	= require('browser-sync'),
 		del 			= require('del'),
+		babel 			= require('gulp-babel'),
 		reload 			= require('browser-sync');
 
 const path = {
@@ -73,9 +74,9 @@ function preSass(){
 		}).on('error', sass.logError))
 		.pipe(gcmq())
 		.pipe(autoprefixer())
-		// .pipe(cleanCss({
-		// 	level: 2
-		// }))
+		.pipe(cleanCss({
+			level: 2
+		}))
 		.pipe(rename({
 			suffix: '.min'
 		}))
@@ -88,6 +89,9 @@ function libsJs(){
 	return gulp.src(path.app.libsJs)
 		.pipe(concat('libs.min.js'))
 		.pipe(sourceMaps.init())
+		.pipe(babel({
+			presets: ['@babel/preset-env']
+		}))
 		.pipe(uglify().on('error', gutil.log))
 		.pipe(sourceMaps.write('.'))
 		.pipe(gulp.dest(path.app.js))
@@ -96,6 +100,9 @@ function libsJs(){
 function js(){
 	return gulp.src(path.app.js+'common.js')
 		.pipe(sourceMaps.init())
+		.pipe(babel({
+			presets: ['@babel/preset-env']
+		}))
 		.pipe(uglify().on('error', gutil.log))
 		.pipe(rename({
 			suffix: '.min'
